@@ -6,6 +6,7 @@ import Counter from './Counter';
 import Input from './Input';
 import MyButton from './MyButton';
 
+import MyForm from './MyForm';
 //  Using Function Component
 function App() {
   return (
@@ -16,11 +17,13 @@ function App() {
       {/* <Counter/> */}
 
       {/* Get input box value without using form */}
-      <Input/>
+      {/* <Input/> */}
 
       {/* Covering hide and show with button */}
-      <myButton/>
+      {/* <myButton/> */}
       
+      {/* Form in React */}
+      <MyForm/>
     </div>
   );
 }
