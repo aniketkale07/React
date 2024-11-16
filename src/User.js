@@ -1,6 +1,15 @@
-import React from 'react';
+import React,{useState} from 'react';
 
-export default function User(){
+export default function User(props){
     return(
-<div>Aniket Kale</div>
+<>
+<h1>User</h1>
+<button onClick={props.passFunction}> click me</button>
+
+
+<h4>counter : {props.count}</h4>
+
+<button onClick={props.increment}>Increment</button>
+</>
+
     )}

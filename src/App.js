@@ -7,8 +7,27 @@ import Input from './Input';
 import MyButton from './MyButton';
 
 import MyForm from './MyForm';
+import Profile from './Profile';
+import FormValidation from './FormValidation';
+import { useState } from 'react';
 //  Using Function Component
 function App() {
+
+  const passFunction=()=>{
+    console.log("buton CLicked");
+  }
+  const [count, setCount]=useState(0);
+
+  // print the counter
+  const countFunction= ()=>{
+    <h2>count</h2>
+    console.log(count);
+  }
+
+  // ?increment count by 1 
+  const incrementFunction=()=>{
+    setCount(count + 1);
+  }
   return (
     <div className="App">
  
@@ -23,7 +42,16 @@ function App() {
       {/* <myButton/> */}
       
       {/* Form in React */}
-      <MyForm/>
+      {/* <MyForm/> */}
+
+      {/* <Profile></Profile> */}
+
+      {/* <FormValidation/> */}
+
+      
+      {/* pass function as props */}
+    <User passFunction={passFunction} count={count} increment={incrementFunction} />
+
     </div>
   );
 }
