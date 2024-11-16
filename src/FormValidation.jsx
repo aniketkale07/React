@@ -52,7 +52,7 @@ const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,}$/;
         email,
         password,
       };
-      setSubmittedData(newSubmittedData); // Correctly set submitted data
+      setSubmittedData(newSubmittedData); 
       console.log("Submitted Data: ", newSubmittedData);
     }
   };

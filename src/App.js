@@ -10,6 +10,7 @@ import MyForm from './MyForm';
 import Profile from './Profile';
 import FormValidation from './FormValidation';
 import { useState } from 'react';
+import RenderFunction from './RenderFunction';
 //  Using Function Component
 function App() {
 
@@ -50,7 +51,10 @@ function App() {
 
       
       {/* pass function as props */}
-    <User passFunction={passFunction} count={count} increment={incrementFunction} />
+    {/* <User passFunction={passFunction} count={count} increment={incrementFunction} /> */}
+
+    {/* render Method in React */}
+   
 
     </div>
   );
